@@ -17,9 +17,9 @@ class KataTest {
     @Test
     void testTimeline() {
         Kata timelineTest = new Kata();
-        String[] timelineText = timelineTest.getTimeline();
-        assertEquals("Good game though. (1 minute ago)", timelineText[0]);
-        assertEquals("Darn! We lost! (2 minute ago)", timelineText[1]);
+        ArrayList<String> timelineText = timelineTest.getTimeline();
+        assertEquals("Good game though. (1 minute ago)", timelineText.get(0));
+        assertEquals("Darn! We lost! (2 minute ago)", timelineText.get(1));
     }
 
     @Test
